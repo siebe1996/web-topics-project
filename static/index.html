@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Siebe Van de Voorde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+
+    <title>Face Recognition</title>
+
+</head>
+<body>
+<main>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="progress progress-bar progress-bar-striped progress-bar-animated mb-2" style="display: none">
+                Loading Model
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!--<div class="col-3">
+            <select id="model-selector" class="costum-select">
+                <option selected disabled>Select Model</option>
+                <option>MobileNet</option>
+                <option>VGG16</option>
+            </select>
+        </div>-->
+        <div class="col-8">
+            <input id="image-selector" class="form-control border-0" type="file">
+        </div>
+        <div class="col-1">
+            <button id="predict-button" class="btn btn-dark floats-right">Predict</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <h2 class="ml-3">Predictions</h2>
+            <ol id="prediction-list"></ol>
+        </div>
+    </div>
+    <hr>
+    <div class="row" id="image">
+        <div class="col-12">
+            <h2 class="ml-3">Image</h2>
+            <img id="selected-image" class="ml-3" src="" />
+        </div>
+    </div>
+</div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
