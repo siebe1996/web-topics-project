@@ -6,9 +6,7 @@
     "use strict";
 
 
-    //const imageUpload = document.getElementById('imageUpload');
     const predictBtn = document.getElementById('predict-button');
-    let selectImg = document.getElementById('selected-image');
     let imgSelector = document.getElementById('image-selector');
     let predictList = document.getElementById("prediction-list");
 
@@ -56,6 +54,7 @@
         const results = resizedDetections.map(d => faceMatcher.findBestMatch(d.descriptor));
 
         console.log(detections);
+        console.log(results);
         while(predictList.firstChild) {
             predictList.removeChild(predictList.firstChild);
         }
