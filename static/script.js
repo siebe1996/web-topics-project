@@ -76,7 +76,7 @@
     }
 
     function loadLabeledImages() {
-        const labels = ['Black Widow', 'Captain America', 'Captain Marvel', 'Hawkeye', 'Jim Rhodes', 'Thor', 'Tony Stark'];
+        const labels = ['Black Widow', 'Captain America', 'Captain Marvel', 'Hawkeye', 'Jim Rhodes', 'Thor', 'Tony Stark', 'Siebe'];
         createDictPerson(labels);
         return Promise.all(
             labels.map(async label => {
